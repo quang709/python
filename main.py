@@ -1,20 +1,32 @@
-# bai 7
-a = [1,3,5,-9,-15,0, 7,100]
-gia_tri_min = a[0]
-for item in a:
-    if gia_tri_min > item:
-        gia_tri_min = item
-print('Gia tri nho nhat la: ', gia_tri_min)
+import random
+randomList = []
+n = input("Nhap n = ")
+n = int(n)
+randomList = random.sample(range(1, 100), n)
+max = randomList[0]
+for value in randomList:
+    if max < value:
+        max = value
+print("List random:" ,randomList)
+print("Max number is:",max)
 
 
-# bai 6
+import random
 
-b = [1,3,5,-9,-15,0, 7,100]
-gia_tri_max = b[0]
-for item in b:
-    if gia_tri_max < item:
-        gia_tri_max = item
-print('Gia tri lon nhat la: ', gia_tri_max)
+randomFloatList = []
+n = input("Nhap n = ")
+n = int(n)
+for i in range(0, n):
+    x = round(random.uniform(50.50, 500.50), 2)
+    randomFloatList.append(x)
+min = randomFloatList[0]
+for value in randomFloatList:
+    if min > value:
+        min = value
+print("Random Float List:", randomFloatList)
+print("Min number is:",min)
+
+
 
 
 
