@@ -33,6 +33,7 @@ print("create matrix b",b)
 d = a.dot(b)
 print(d)
 
+
 # [[ 38  38 118]
 #  [ 80  95 295]]
 
