@@ -39,7 +39,7 @@ def them_sinhvien(connection, metadata, engine,
                 hoten, namsinh,sdt):
   try:
     # Lấy đối tượng person từ bảng person trong csdl
-    sinhvien = db.Table('sinhvienx', metadata, autoload=True, autoload_with=engine)
+    sinhvien = db.Table('sinhvien', metadata, autoload=True, autoload_with=engine)
     # Chèn 1 dòng vào bảng person
     query = db.insert(sinhvien).values(hoten=hoten, namsinh=namsinh,sdt=sdt)
     ResultProxy = connection.execute(query)
